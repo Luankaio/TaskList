@@ -7,7 +7,8 @@ function App() {
   const [ma, setMa] = useState<{ id: number; taskk: string; }[]>([]);
   var [mi, setMi] = useState(0);
   const [mu, setMu] = useState("");
-  
+  const [me, setMe] = useState(true);
+  const [mo, setMo] = useState("");
 
   const criar = () => {
     const task = {
@@ -28,15 +29,35 @@ function App() {
     setMu(event.target.value)
   }
 
+  const handleclickbutton = () =>{
+    setMu("")
+    criar()
+  }
 
+  const handlepoppup = (name : any) =>{
+    setMe(!me)
+    setMo(name.taskk)
+  }
+  const aaa = () =>{
+
+  }
   return (
     <div className="App">
-      <input onChange={handle}></input>
-      <button onClick={criar}>criar</button>
-      <h1>{"Checklist"}</h1>
+      <header>
+      <input value={mu} onChange={handle}></input>
+      <button onClick={handleclickbutton}>criar</button>
+      <h1>{"FlashCards"}</h1>
+      
+      </header>
+        {me ? <div></div>:<div className='Oii' onClick={() => setMe(!me)}>{mo}</div>}
         <div className='pai'>{  
+          
           ma.map((name,key) => {
-            return <div className='Oi' onClick={()=>remove(name.id)}>{name.taskk}{name.id}</div>
+            return <div className='card'>
+              
+              <div className='excluir' onClick={()=>remove(name.id)}></div>
+              <div className='Oi' onClick={() => handlepoppup(name)} ><h1 className='textinside'>{name.taskk}</h1></div> 
+            </div>
           })}
         </div>
     </div>

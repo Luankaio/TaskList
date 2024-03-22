@@ -1,46 +1,76 @@
 .App {
   text-align: center;
+  
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: #b4b4b4;
+  
 }
-.div{
-  background: red;
+.textinside{
+  word-wrap: break-word;
+  font-size: 20px;
+  width: 200px;
+  padding: 0px 17px;
+  overflow-y: auto;
+  max-height: 80px;
 }
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header{
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  flex-direction: column;
+  background-color: rgb(204, 200, 193);
+  border-bottom: 2px solid;
+  border-color: rgb(117, 117, 117);
+  margin-bottom: 30px;
 
-.App-link {
-  color: #61dafb;
 }
-.Oi{
-  background-color: red;
+.Oii{
+  background-color: rgb(88, 88, 88);
   width: 200px;
   height: 100px;
-  border: 10px ;
+  transition: 0.4s;
   margin: 2px;
+  position: absolute;
+  right: 570px;
+  z-index: 2;
+  margin-bottom: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 20px;
-  border-color: black;
+  border: 2px solid rgb(59, 59, 59);
+  box-shadow: 7px 7px 20px rgb(70, 70, 70);
+  scale: 2;
 }
+input{
+  margin-top: 7px;
+  width: 170px;
+  height: 20px;
+}
+button{
+  width: 80px;
+  height: 30px;
+  margin-top: 10px;
+}
+.Oi{
+  background-color: rgb(88, 88, 88);
+  width: 200px;
+  height: 100px;
+  transition: 0.4s;
+  margin: 2px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  border: 2px solid rgb(59, 59, 59);
+  box-shadow: 7px 7px 20px rgb(70, 70, 70);
+}
+.Oi:hover{
+  scale: 1.2;
+}
+
 .pai{
   align-items: center;
   justify-content: center;
@@ -48,11 +78,20 @@
   flex-wrap: wrap;
   
 }
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.excluir{
+  border-radius: 100%;
+  transition: 0.2;
+  border: 1px solid rgba(0, 0, 0, 0.527);
+  height: 20px;
+  margin-bottom: 5px;
+  background-color: #ff7a7a;
+  width: 20px;
+}
+.excluir:hover{
+  scale: 1.2;
 }
