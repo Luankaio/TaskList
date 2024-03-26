@@ -47,9 +47,9 @@ function App() {
       <input value={mu} onChange={handle}></input>
       <button onClick={handleclickbutton}>criar</button>
       <h1>{"FlashCards"}</h1>
-      
+      {me ? <div></div>:<div className='Oii' onClick={() => setMe(!me)}><h1 className='textinside2'>{mo}</h1></div>}
       </header>
-        {me ? <div></div>:<div className='Oii' onClick={() => setMe(!me)}>{mo}</div>}
+      
         <div className='pai'>{  
           
           ma.map((name,key) => {

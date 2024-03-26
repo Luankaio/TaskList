@@ -1,9 +1,9 @@
 .App {
   text-align: center;
-  
 }
 body{
   background-color: #b4b4b4;
+  overflow-y: auto;
   
 }
 .textinside{
@@ -13,6 +13,12 @@ body{
   padding: 0px 17px;
   overflow-y: auto;
   max-height: 80px;
+}
+.textinside2{
+  height: 90%;
+  font-size: 15px;
+  word-wrap: break-word;
+  overflow-y: auto;
 }
 header{
   display: flex;
@@ -27,17 +33,17 @@ header{
 }
 .Oii{
   background-color: rgb(88, 88, 88);
-  width: 200px;
-  height: 100px;
-  transition: 0.4s;
+  width: 25%;
+  height: 30%;
+  transition: 0.3s;
   margin: 2px;
-  position: absolute;
-  right: 570px;
+  position: fixed;
   z-index: 2;
-  margin-bottom: 20px;
   display: flex;
+  margin-top: 40%;
   align-items: center;
   justify-content: center;
+  padding: 10px;
   border-radius: 20px;
   border: 2px solid rgb(59, 59, 59);
   box-shadow: 7px 7px 20px rgb(70, 70, 70);
@@ -82,6 +88,7 @@ button{
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 .excluir{
   border-radius: 100%;
