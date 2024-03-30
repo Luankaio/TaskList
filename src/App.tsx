@@ -46,7 +46,7 @@ function App() {
       <header>
       <input value={mu} onChange={handle}></input>
       <button onClick={handleclickbutton}>criar</button>
-      <h1>{"FlashCards"}</h1>
+      <h1>{"Tasklist"}</h1>
       {me ? <div></div>:<div className='Oii' onClick={() => setMe(!me)}><h1 className='textinside2'>{mo}</h1></div>}
       </header>
       
