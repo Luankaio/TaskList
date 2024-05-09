@@ -54,12 +54,12 @@ function App() {
     <div className="App">
       
       <header>
-      <input onKeyDown={clicarComEnter} value={mu} onChange={handle}></input>
+      <input content='dsads' onKeyDown={clicarComEnter} value={mu} onChange={handle}></input>
       <button onClick={criarTask}>criar</button>
       <h1>{"Tasklist"}</h1>
       
-      </header>
       {me ? <div></div>:<div className='Oii' onClick={() => setMe(!me)}><h1 className='textinside2'>{mo}</h1></div>}
+      </header>
         <div className='pai'>{  
           
           ma.map((name,key) => {

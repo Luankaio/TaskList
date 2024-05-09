@@ -1,8 +1,12 @@
 .App {
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 body{
-  background-color: #b4b4b4;
+  background-color: #222222;
   overflow-y: auto;
   
 }
@@ -23,28 +27,29 @@ body{
 header{
   display: flex;
   align-items: center;
+  width: 100%;
   justify-content: center;
   flex-direction: column;
-  background-color: rgb(204, 200, 193);
+  background-color: rgb(63, 63, 63);
   border-bottom: 2px solid;
-  border-color: rgb(117, 117, 117);
+  border-color: rgb(238, 238, 238);
   margin-bottom: 30px;
-
 }
 
 
 .Oii{
-  background-color: rgb(88, 88, 88);
-  width: 20%;
+  background-color: rgb(214, 214, 214);
+  min-width: 20%;
+  max-width: 30%;
   height: 25%;
-  margin-left: 50%;
+  margin-top: 80vh;
   transition: 0.3s;
   position: fixed;
   z-index: 2;
   padding: 10px;
   border-radius: 20px;
   border: 2px solid rgb(59, 59, 59);
-  box-shadow: 7px 7px 20px rgb(70, 70, 70);
+  box-shadow: 7px 7px 20px rgb(31, 31, 31);
   scale: 2;
 }
 
@@ -52,11 +57,18 @@ input{
   margin-top: 7px;
   width: 190px;
   height: 30px;
+  background-color: #bcb8c0;
+  border: solid rgb(255, 255, 255);
+  border-radius: 10px;
+  border-width: 2px;
 }
 button{
   width: 80px;
   height: 30px;
   margin-top: 10px;
+  font-weight: 700;
+  font-size: 15px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.513);
 }
 .Oi{
   background-color: rgb(88, 88, 88);
@@ -74,6 +86,7 @@ button{
 }
 .Oi:hover{
   scale: 1.2;
+  z-index: 3;
 }
 
 .pai{
